@@ -1,5 +1,5 @@
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	NetPacket
+%define		pdir	NetPacket
 Summary:	NetPacket - modules to assemble/disassemble network packets of various Internet protocols
 Summary(pl):	NetPacket - modu³y sk³adania/rozk³adania pakietów ró¿nych protoko³ów internetowych
 Name:		perl-NetPacket
