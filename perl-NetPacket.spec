@@ -2,9 +2,10 @@
 %define         pnam NetPacket
 
 Summary:	NetPacket do disassembly of network packets of various Internet protocols
+Summary(pl):	Modu³ NetPacket do rozk³adania pakietów ró¿nych protoko³ów internetowych
 Name:		perl-%{pnam}
 Version:	0.03
-Release:	1
+Release:	2
 License:	GPL
 Group:		Development/Languages/Perl
 Group(de):	Entwicklung/Sprachen/Perl
@@ -19,6 +20,11 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 The NetPacket module do disassembly of network packets of various Internet
 protocols. At present, decoding for the following protocols has been 
 implemented: Ethernet (802.3 and 802.2), ARP, ICMP, IGMP, IP, UDP and TCP.
+
+%description -l pl
+Modu³ NetPacket rozk³ada pakiety sieciowe ró¿nych internetowych
+protoko³ów. Aktualnie ma zaimplementowane dekodowanie nastêpuj±cych
+protoko³ów: Ethernet (802.3 i 802.2), ARP, ICMP, IGMP, IP, UDP i TCP.
 
 %prep
 %setup -q -n %{pnam}-%{version}
