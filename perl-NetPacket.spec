@@ -29,7 +29,7 @@ protoko³ów: Ethernet (802.3 i 802.2), ARP, ICMP, IGMP, IP, UDP i TCP.
 %setup -q -n %{pnam}-%{version}
 
 %build
-perl Makefile.PL
+%{__perl} Makefile.PL
 %{__make}
 
 %install
