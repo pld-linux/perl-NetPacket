@@ -31,7 +31,7 @@ protoko³ów: Ethernet (802.3 i 802.2), ARP, ICMP, IGMP, IP, UDP i TCP.
 
 %build
 %{__perl} Makefile.PL \
-	INSTALLDIRS=vendor 
+	INSTALLDIRS=vendor
 %{__make}
 
 %install
