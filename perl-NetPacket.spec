@@ -8,18 +8,25 @@ Version:	0.03
 Release:	2
 License:	GPL
 Group:		Development/Languages/Perl
+Group(cs):	Vývojové prostøedky/Programovací jazyky/Perl
 Group(de):	Entwicklung/Sprachen/Perl
+Group(es):	Desarrollo/Lenguajes/Perl
+Group(fr):	Development/Langues/Perl
+Group(ja):	³«È¯/¸À¸ì/Perl
 Group(pl):	Programowanie/Jêzyki/Perl
-Source0:	 ftp://ftp.perl.org/pub/CPAN/modules/by-module/%{pnam}/%{pnam}-%{version}.tar.gz
+Group(pt):	Desenvolvimento/Linguagens/Perl
+Group(ru):	òÁÚÒÁÂÏÔËÁ/ñÚÙËÉ/Perl
+Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/%{pnam}/%{pnam}-%{version}.tar.gz
 BuildRequires:	rpm-perlprov >= 3.0.3-16
 BuildRequires:	perl >= 5.6
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-The NetPacket module do disassembly of network packets of various Internet
-protocols. At present, decoding for the following protocols has been 
-implemented: Ethernet (802.3 and 802.2), ARP, ICMP, IGMP, IP, UDP and TCP.
+The NetPacket module do disassembly of network packets of various
+Internet protocols. At present, decoding for the following protocols
+has been implemented: Ethernet (802.3 and 802.2), ARP, ICMP, IGMP, IP,
+UDP and TCP.
 
 %description -l pl
 Modu³ NetPacket rozk³ada pakiety sieciowe ró¿nych internetowych
