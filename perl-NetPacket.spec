@@ -1,6 +1,6 @@
 %include	/usr/lib/rpm/macros.perl
-%define         pnam NetPacket
-
+%define	pdir	NetPacket
+%define	pnam	NetPacket
 Summary:	NetPacket - modules to assemble/disassemble network packets of various Internet protocols
 Summary(pl):	NetPacket - modu³y sk³adania/rozk³adania pakietów ró¿nych protoko³ów internetowych
 Name:		perl-%{pnam}
@@ -8,7 +8,7 @@ Version:	0.04
 Release:	2
 License:	Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/%{pnam}/%{pnam}-%{version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pnam}-%{version}.tar.gz
 # Source0-md5:	3bf136cd3b555d50ba4b1ce81968f695
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRequires:	perl-devel >= 5.6.1
@@ -45,7 +45,8 @@ nie dokoñczone).
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 find $RPM_BUILD_ROOT -name .packlist | xargs -r rm -f
 
 %clean
