@@ -5,7 +5,7 @@ Summary:	NetPacket do disassembly of network packets of various Internet protoco
 Summary(pl):	Modu³ NetPacket do rozk³adania pakietów ró¿nych protoko³ów internetowych
 Name:		perl-%{pnam}
 Version:	0.03
-Release:	2
+Release:	3
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/%{pnam}/%{pnam}-%{version}.tar.gz
