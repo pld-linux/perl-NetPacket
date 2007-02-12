@@ -1,7 +1,7 @@
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	NetPacket
 Summary:	NetPacket - modules to assemble/disassemble network packets of various Internet protocols
-Summary(pl):	NetPacket - modu³y sk³adania/rozk³adania pakietów ró¿nych protoko³ów internetowych
+Summary(pl.UTF-8):   NetPacket - moduÅ‚y skÅ‚adania/rozkÅ‚adania pakietÃ³w rÃ³Å¼nych protokoÅ‚Ã³w internetowych
 Name:		perl-NetPacket
 Version:	0.04
 Release:	2
@@ -23,14 +23,14 @@ following protocols has been implemented: Ethernet (802.3 and 802.2),
 ARP, ICMP, IGMP, IP, UDP, TCP, LLC, Spanning Tree (802.1D and 802.1w)
 and LACP (not complete yet).
 
-%description -l pl
-"NetPacket" stanowi klasê bazow± dla zbioru modu³ów s³u¿±cych do
-rozkodowywania i kodowania protoko³ów sieciowych. Ka¿dy z tych modu³ów
-umie rozkodowaæ i zakodowaæ implementowany przez siebie protokó³
+%description -l pl.UTF-8
+"NetPacket" stanowi klasÄ™ bazowÄ… dla zbioru moduÅ‚Ã³w sÅ‚uÅ¼Ä…cych do
+rozkodowywania i kodowania protokoÅ‚Ã³w sieciowych. KaÅ¼dy z tych moduÅ‚Ã³w
+umie rozkodowaÄ‡ i zakodowaÄ‡ implementowany przez siebie protokÃ³Å‚
 sieciowy. Aktualnie zaimplementowane jest rozkodowywanie/kodowanie
-nastêpuj±cych protoko³ów: Ethernet (802.3 i 802.2), ARP, ICMP, IGMP,
+nastÄ™pujÄ…cych protokoÅ‚Ã³w: Ethernet (802.3 i 802.2), ARP, ICMP, IGMP,
 IP, UDP, TCP, LLC, Spanning Tree (802.1D and 802.1w) i LACP (jeszcze
-nie dokoñczone).
+nie dokoÅ„czone).
 
 %prep
 %setup -q -n %{pdir}-%{version}
