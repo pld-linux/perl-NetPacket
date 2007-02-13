@@ -1,7 +1,7 @@
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	NetPacket
 Summary:	NetPacket - modules to assemble/disassemble network packets of various Internet protocols
-Summary(pl.UTF-8):   NetPacket - moduły składania/rozkładania pakietów różnych protokołów internetowych
+Summary(pl.UTF-8):	NetPacket - moduły składania/rozkładania pakietów różnych protokołów internetowych
 Name:		perl-NetPacket
 Version:	0.04
 Release:	2
