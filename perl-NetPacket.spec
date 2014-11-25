@@ -1,5 +1,5 @@
-%include	/usr/lib/rpm/macros.perl
 %define		pdir	NetPacket
+%include	/usr/lib/rpm/macros.perl
 Summary:	NetPacket - modules to assemble/disassemble network packets of various Internet protocols
 Summary(pl.UTF-8):	NetPacket - moduły składania/rozkładania pakietów różnych protokołów internetowych
 Name:		perl-NetPacket
@@ -9,16 +9,17 @@ License:	Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{version}.tar.gz
 # Source0-md5:	77c1482927c6892b9571404485ffe591
-BuildRequires:	rpm-perlprov >= 4.1-13
+URL:		http://search.cpan.org/dist/NetPacket/
 BuildRequires:	perl-devel >= 1:5.8.0
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 "NetPacket" provides a base class for a cluster of modules related to
-decoding and encoding of network protocols.  Each "NetPacket"
+decoding and encoding of network protocols. Each "NetPacket"
 descendent module knows how to encode and decode packets for the
-network protocol it implements.  At present, decoding/encoding for the
+network protocol it implements. At present, decoding/encoding for the
 following protocols has been implemented: Ethernet (802.3 and 802.2),
 ARP, ICMP, IGMP, IP, UDP, TCP, LLC, Spanning Tree (802.1D and 802.1w)
 and LACP (not complete yet).
