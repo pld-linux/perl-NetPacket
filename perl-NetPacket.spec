@@ -3,12 +3,12 @@
 Summary:	NetPacket - modules to assemble/disassemble network packets of various Internet protocols
 Summary(pl.UTF-8):	NetPacket - moduły składania/rozkładania pakietów różnych protokołów internetowych
 Name:		perl-NetPacket
-Version:	0.41.1
+Version:	1.6.0
 Release:	1
 License:	Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{version}.tar.gz
-# Source0-md5:	77c1482927c6892b9571404485ffe591
+# Source0-md5:	17ba0407dada096f046f513387e88818
 URL:		http://search.cpan.org/dist/NetPacket/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
