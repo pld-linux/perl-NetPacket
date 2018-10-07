@@ -1,0 +1,14 @@
+diff -ruN NetPacket-1.6.0.orig/lib/NetPacket/Ethernet.pm NetPacket-1.6.0/lib/NetPacket/Ethernet.pm
+--- NetPacket-1.6.0.orig/lib/NetPacket/Ethernet.pm	2015-03-13 23:20:07.000000000 +0100
++++ NetPacket-1.6.0/lib/NetPacket/Ethernet.pm	2018-10-07 15:31:17.126294738 +0200
+@@ -127,8 +127,8 @@
+ sub encode {
+     my ($self) = shift; 
+ 
+-    (my $dest = $self->{src_mac}) =~ s/://g;
+-    (my $src = $self->{dest_mac}) =~ s/://g;
++    (my $src = $self->{src_mac}) =~ s/://g;
++    (my $dest = $self->{dest_mac}) =~ s/://g;
+ 
+     my $frame = pack('H12H12n a*', $dest, $src, 0x0800, $self->{data});
+     return $frame;

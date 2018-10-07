@@ -9,6 +9,7 @@ License:	Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{version}.tar.gz
 # Source0-md5:	17ba0407dada096f046f513387e88818
+Patch0:		%{name}-ethernet.patch
 URL:		http://search.cpan.org/dist/NetPacket/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
@@ -35,6 +36,7 @@ nie dokończone).
 
 %prep
 %setup -q -n %{pdir}-%{version}
+%patch0 -p1
 
 %build
 %{__perl} Makefile.PL \
